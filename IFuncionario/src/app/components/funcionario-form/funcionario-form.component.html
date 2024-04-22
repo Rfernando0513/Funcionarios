@@ -1,7 +1,9 @@
-<mat-card>
-    <h1>{{btnTitulo}}</h1>
+<h1>{{btnTitulo}}</h1>
 
-    <form [formGroup]>
+<form [formGroup]="funcionarioForm" (ngSubmit)="submit()" #formDir="ngForm">
+    <input type="hidden" value="" formControlName="id">
 
-    </form>
-</mat-card>
+    <div class="input-box">
+        
+    </div>
+</form>

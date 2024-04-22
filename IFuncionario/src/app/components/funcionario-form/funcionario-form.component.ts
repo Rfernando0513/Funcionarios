@@ -7,9 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-funcionario-form',
   standalone: true,
-  imports: [
-    Mat
-  ],
+  imports: [],
   templateUrl: './funcionario-form.component.html',
   styleUrl: './funcionario-form.component.css'
 })
