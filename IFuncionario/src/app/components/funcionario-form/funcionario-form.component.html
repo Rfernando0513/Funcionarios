@@ -4,6 +4,36 @@
     <input type="hidden" value="" formControlName="id">
 
     <div class="input-box">
-        
+        <label>Nome:</label>
+        <input type="text" formControlName="nome" placeholder="Insira o nome" required></input>
+    </div>
+
+    <div class="input-box">
+        <label>Sobrenome:</label>
+        <input type="text" formControlName="nome" placeholder="Insira o sobrenome" required></input>
+    </div>
+
+    <div class="input-box">
+        <label>Departamento:</label>
+        <input type="text" formControlName="nome" placeholder="Insira o sobrenome" required></input>
+        <option value="RH">RH</option>
+        <option value="FINANCEIRO">Financeiro</option>
+        <option value="COMPRAS">Compras</option>
+        <option value="ATENDIMENTO">Atendimento</option>
+        <option value="Zeladoria">Zeladoria</option>
+    </div>
+
+    <formGroup>
+        <label>Turno</label>
+        <select id="turno" formControlName="turno" required>
+            <option value="Manha">Manha</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+    </formGroup>
+
+    <div class="btn-box">
+        <button type="submit" [disabled]="!funcionarioForm.valid"> {{btnAcao}}</button>
+        <button routerLink="">Voltar</button>
+
     </div>
 </form>
